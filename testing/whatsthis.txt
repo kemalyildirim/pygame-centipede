@@ -1,0 +1,2 @@
+We practiced some of the examples for better understanding
+of pygame library.

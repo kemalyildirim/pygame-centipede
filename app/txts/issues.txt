@@ -1,0 +1,46 @@
+1- Collision handling
+
+This is the main problem of the project.
+Between sprites and sprite groups their behavings are not handled smoothly.
+Our best successful atempt is the Shooter-Mushroom collision case.
+TODO: 
+    after we figure out how to handle sprite collisions, smoothly:
+    Fix Shooter-Mushroom collision. Mushrooms must be obstacle for the shooter.
+    Centipede-Mushroom: on hit reverse the dx value of the Centipede.
+    Spider-Mushroom: Spiders can eat the mushrooms.
+    Spider-Shooter: -1 live to player.
+
+2- Spider is not chasing the player
+
+Need to calculate distance between the player and the shooter, after this spider should create a few
+waypoints and follow these waypoints to get player. We didn't implement drawing a line to player and then
+a spider following this line. Instead of this, spider spawns on left to the screen or right then wanders
+to the opposite direction.
+
+3- Refactoring sprite speeds.
+
+For more enjoyable game experience.
+
+4- Scoreboard on the top of the screen, including remaining lives of player.
+
+5-Movement of the player
+
+Currently, program can't handle moving the player on NW, NE, SW, SE directions. For example if the player
+wants to go up-left direction, they need to press up arrow key, then to left arrow key. If they press 
+simultaneously, program can't handle this input.
+
+6- Centipede after hit
+
+After hit, centipede needs to spawn a mushroom on the point where it's hit, and it needs to split in two
+recursively.
+
+7- Stages
+
+In main, we only increased the centipede speed for difficulty. We can add additional monsters and like in
+Atari's centipede we can move the centipede vertically.
+
+8- Spiders spawn to quick, somehow need to set a time interval. pygame’s set timer method won’t work.
+
+9- Main code
+
+Things are just too spaghetti in main.

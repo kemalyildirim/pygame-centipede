@@ -1,0 +1,5 @@
+1- Shooter.py - Shooter controls and shooting the projectile.
+2- Mushroom.py - Mushroom implemantation, effect of the projectile hits to the mushroom.
+3- Centipede.py - Centipede movement, spawns mushroom on death, mushroom collision check, player collision check.
+4- Spider.py - Spider movement, random spawn, player collision check.
+5- Game gui and scoreboard implemantation.
